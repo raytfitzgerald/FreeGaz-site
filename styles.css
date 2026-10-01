@@ -293,6 +293,11 @@ h3 { font-size: 1.4rem; font-weight: 600; }
 .download { border-top: 1px solid var(--line); }
 .download h2 { margin-bottom: 2rem; }
 .download ol li { margin-bottom: 0.6rem; }
+.bike-fund { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 2rem; }
+.bike-fund > div { flex: 1 1 26rem; }
+.bike-fund .cta-row { margin: 0; }
+.bike-fund .btn { margin-top: 0; }
+[hidden] { display: none !important; }
 
 /* Footer */
 
