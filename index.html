@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeGaz: the free indoor trainer app</title>
+  <meta name="description" content="FreeGaz is a free, open-source indoor cycling trainer for macOS and your phone. ERG, workouts, FTP tests, real routes, a workout builder and coaches with opinions. No subscription.">
+  <meta name="theme-color" content="#111d36" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ebf1f7" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://freegaz.com/">
+  <link rel="icon" href="assets/brand/freegaz-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freegaz.com/">
+  <meta property="og:title" content="FreeGaz: the indoor trainer app that doesn't send you a bill every month">
+  <meta property="og:description" content="Free, open-source indoor cycling for macOS and your phone. ERG, workouts, FTP tests, routes, a builder and rude coaches.">
+  <meta property="og:image" content="https://freegaz.com/assets/img/home.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/saira.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="#top" class="brand" aria-label="FreeGaz home">
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="assets/brand/freegaz-wordmark.svg">
+          <img src="assets/brand/freegaz-wordmark-night.svg" alt="FreeGaz" width="132" height="53">
+        </picture>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#phone">Phone</a></li>
+          <li><a href="https://github.com/raytfitzgerald/FreeGaz">GitHub</a></li>
+          <li><a class="btn btn-small" href="#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Indoor cycling for macOS and your phone</p>
+        <h1>The indoor trainer app that doesn't send you a bill every month.</h1>
+        <p class="lede">You bought the smart trainer. You bought the bike. FreeGaz drives them in ERG, level, slope or heart-rate mode, runs structured workouts and FTP tests, rides real roads, and keeps every second on your Mac as a FIT file. It costs nothing, now or later.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/raytfitzgerald/FreeGaz/releases" data-dmg>
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+            Download for Mac
+          </a>
+          <a class="btn btn-secondary" href="https://raytfitzgerald.github.io/FreeGaz/">Open on your phone</a>
+        </div>
+        <p class="fine"><span data-version>v0.3.0 pre-release</span> · Apple Silicon · Free and open source (MIT)</p>
+
+        <figure class="hero-shot">
+          <picture>
+            <source media="(prefers-color-scheme: light)" srcset="assets/img/home-light.png">
+            <img src="assets/img/home.png" width="1600" height="1000" alt="FreeGaz Home: a velodrome seen from above with this week's rides lapping it, and a coach shouting from the infield through a megaphone">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Price board -->
+    <section class="board" aria-labelledby="price-title">
+      <div class="wrap">
+        <h2 id="price-title" class="visually-hidden">What it costs</h2>
+        <ul class="board-tiles">
+          <li><span class="num">$0</span><span class="unit">a month</span></li>
+          <li><span class="num">$0</span><span class="unit">a year</span></li>
+          <li><span class="num">0</span><span class="unit">trials ending</span></li>
+          <li><span class="num">0</span><span class="unit">ads</span></li>
+        </ul>
+        <p class="board-note">No Premium tier, no annual plan with the cancel button four menus deep, and no "your trial has ended" email on the morning of your FTP test. The only thing it charges is your legs.</p>
+      </div>
+      <div class="track" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <!-- Tour -->
+    <section id="tour" class="tour" aria-labelledby="tour-title">
+      <div class="wrap">
+        <p class="eyebrow">A quick tour</p>
+        <h2 id="tour-title">Ready to suffer?</h2>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3>Pick a ride and go</h3>
+            <p>One big button, four choices: ride for time, free ride, a route or a workout. Your trainer and heart-rate status sit on top, so you know before you start.</p>
+            <p>Ride for time holds your watts from easy to sweet spot for 20 to 90 minutes. No forty-tab dashboard to decode before your warm-up.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/ride-picker.png" width="1600" height="1000" alt="The Ride picker: ride for time, free ride, route or workout, with the trainer and heart-rate status on top"></figure>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h3>Your coach rides with you</h3>
+            <p>Your coach bikes next to you at your target. Ease off and they ride away and tell you about it. Push and you drop them, which is the best feeling in indoor cycling.</p>
+            <p>The big numbers stay big: interval, target and power, with the workout chart filling in as you go.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/workout.png" width="1600" height="1000" alt="A workout mid-ride: the coach on the ride-along, the interval, target and power numbers, and the workout chart filling in"></figure>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3>Ten coaches, five spice levels, three kinds of language</h3>
+            <p>From a calm Zen master to a drill sergeant, a disappointed dad and a data nerd, plus two famous podium voices doing their best impressions.</p>
+            <p>Spice runs from gentle to feral. Profanity goes from Clean to Mild to Unhinged. Unhinged means it. Your body, weight and health are never joke material, and if your heart rate looks wrong every coach turns supportive.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/coach.png" width="1600" height="1000" alt="Coach settings: the personas, a sample line, spice from gentle to feral, and profanity from clean to unhinged"></figure>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h3>Workouts you can see before they hurt you</h3>
+            <p>Every workout is drawn as its power profile at your FTP, on three shelves: FreeGaz's own, your custom ones, and a training plan you put in order.</p>
+            <p>There's an FTP test too: 20-minute, 8-minute or ramp. A valid result saves your FTP automatically, with one-click undo.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/workouts.png" width="1600" height="1000" alt="The Workouts page: every workout drawn as its power profile, with Custom workouts and Training plan tabs"></figure>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3>And some your old app would never have shipped</h3>
+            <p>Eight rude workouts where the power chart is the joke. The Bird is four knuckles at threshold and a middle finger at 150&nbsp;% FTP. Mount Stupid is the Dunning-Kruger curve. Stairway to Hell has no landing. Liar Liar says "last one" seven times.</p>
+            <p>The other four have names that don't belong on a homepage.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/the-bird.png" width="1600" height="1151" alt="The Bird: a workout whose power profile is a hand with the middle finger raised, at 150 % FTP"></figure>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h3>A builder for the ones nobody has written yet</h3>
+            <p>Drag blocks, resize them, type intervals.icu text, or describe it and let the AI write it. Live TSS, IF and zone totals at your FTP.</p>
+            <p>Import <code>.zwo</code>, <code>.mrc</code> and <code>.erg</code>, and export straight into Zwift's custom workouts.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/builder.png" width="1600" height="1000" alt="The builder: name, author and folder, live TSS, IF and zones, blocks you drag and resize, and export to Zwift"></figure>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3>Real roads, real gradients</h3>
+            <p>Import a GPX and the trainer climbs when the road does. Race a ghost of your last attempt if you're feeling brave.</p>
+            <p>Or turn on Journeys and ride somewhere real: Land's End to John o' Groats, the Danube, Route 66 or Tokyo to Hiroshima. Each ride picks up where the last one stopped, and lands on Strava with a map.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="assets/img/route.png" width="1600" height="1000" alt="A route ride on a 6 % climb: speed, grade and power, the ride-along, and the next two kilometres of elevation"></figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <p class="eyebrow">Everything it does</p>
+        <h2 id="features-title">All of it, for nothing</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Riding</h3>
+            <ul>
+              <li>ERG, level, slope and heart-rate modes</li>
+              <li>Soft start and a "spiral of death" guard</li>
+              <li>Skip, repeat or extend intervals; intensity in 1&nbsp;% steps</li>
+              <li>Interval rescue when a hard rep is failing</li>
+              <li>FTP tests that save your FTP</li>
+              <li>GPX and TCX routes: reactive, steady or ghost race</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Seeing everything</h3>
+            <ul>
+              <li>Over 40 HUD metrics in tiles you arrange</li>
+              <li>NP, IF, TSS, W′bal, L/R balance, DFA-α1</li>
+              <li>A mini-HUD that floats over Netflix</li>
+              <li>Phone remote by QR code</li>
+              <li>Spotify and Apple Music controls</li>
+              <li>Night and light themes, metric or imperial</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Building workouts</h3>
+            <ul>
+              <li>A zwofactory-style drag-and-drop builder</li>
+              <li>intervals.icu text mode, synced both ways</li>
+              <li>Import <code>.zwo</code>, <code>.mrc</code>, <code>.erg</code></li>
+              <li>Export to Zwift</li>
+              <li>Optional AI: describe it, then edit it</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Coaching</h3>
+            <ul>
+              <li>Ten personas with faces and a voice</li>
+              <li>Spice 1–5, profanity Clean to Unhinged</li>
+              <li>The ride-along: pace them or drop them</li>
+              <li>Coach chat with Claude, OpenAI, Grok or Ollama</li>
+              <li>Mute with <kbd>C</kbd>; safety prompts still get through</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Your history</h3>
+            <ul>
+              <li>A ride list or a calendar shaded by load</li>
+              <li>Fitness, fatigue and form; power curve; FTP history</li>
+              <li>A plain-English fitness overview</li>
+              <li>A FIT file for every ride</li>
+              <li>Import old Garmin and Wahoo FIT files</li>
+              <li>Full backup and restore as a zip</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Works with</h3>
+            <ul>
+              <li>Bluetooth smart trainers (FTMS and Wahoo)</li>
+              <li>Heart-rate straps and Garmin HR broadcast</li>
+              <li>Power meters, speed and cadence sensors</li>
+              <li>Headwind fans, CORE and Moxy</li>
+              <li>Strava, intervals.icu and Garmin Connect (FIT)</li>
+            </ul>
+            <p class="card-note">Tested on a Wahoo KICKR and a heart-rate strap. Everything else follows the Bluetooth specs and is tested against a simulator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data -->
+    <section class="data" aria-labelledby="data-title">
+      <div class="wrap data-row">
+        <div>
+          <p class="eyebrow">Your data</p>
+          <h2 id="data-title">Your rides stay yours</h2>
+        </div>
+        <div class="data-text">
+          <p>Everything lives on your Mac: the ride database, plus a FIT file per ride in <code>~/Documents/FreeGaz/Rides</code>. Point that folder at iCloud Drive for free sync.</p>
+          <p>Nothing leaves the machine unless you connect Strava or intervals.icu, turn on an AI provider, or send a bug report. API keys are encrypted with your macOS Keychain.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phone -->
+    <section id="phone" class="phone" aria-labelledby="phone-title">
+      <div class="wrap">
+        <p class="eyebrow">On your phone</p>
+        <h2 id="phone-title">No app store involved</h2>
+        <p class="section-lede">Open FreeGaz in your phone's browser and add it to your home screen. It gets its own icon, opens full screen and works offline, which is handy, because the pain cave never has Wi-Fi.</p>
+        <div class="grid two">
+          <div class="card">
+            <h3>Android (Chrome)</h3>
+            <p>The full experience, trainer included.</p>
+            <ol>
+              <li>Open the link in Chrome.</li>
+              <li>Tap <strong>⋮ → Add to Home screen → Install</strong>.</li>
+              <li>Open <strong>More → Devices</strong> and pair your trainer and strap.</li>
+            </ol>
+          </div>
+          <div class="card">
+            <h3>iPhone and iPad (Safari)</h3>
+            <p>Everything except Bluetooth: Apple doesn't let any iPhone browser talk to trainers or straps.</p>
+            <ol>
+              <li>Open the link in Safari.</li>
+              <li>Tap <strong>Share → Add to Home Screen → Add</strong>.</li>
+              <li>Use the library, builder, history and coaches. Ride on the Mac or Android.</li>
+            </ol>
+          </div>
+        </div>
+        <p class="cta-row"><a class="btn btn-secondary" href="https://raytfitzgerald.github.io/FreeGaz/">Open FreeGaz on your phone</a></p>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download" aria-labelledby="download-title">
+      <div class="wrap">
+        <p class="eyebrow">Download</p>
+        <h2 id="download-title">Get on the bike</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>Mac</h3>
+            <p>Needs a Mac with Apple Silicon and Bluetooth.</p>
+            <ol>
+              <li>Download <span class="mono" data-dmg-name>FreeGaz-0.3.0-arm64.dmg</span> and drag FreeGaz to Applications.</li>
+              <li>The builds aren't notarized yet, so macOS refuses the first launch. Right-click <strong>FreeGaz.app → Open</strong>, or run:
+                <pre><code>xattr -dr com.apple.quarantine /Applications/FreeGaz.app</code></pre>
+              </li>
+              <li>Quit Zwift and the Wahoo app so FreeGaz can control the trainer, then press <strong>Connect trainer</strong>.</li>
+            </ol>
+            <p><a class="btn btn-primary" href="https://github.com/raytfitzgerald/FreeGaz/releases" data-dmg>Download for Mac</a></p>
+          </div>
+          <div class="card">
+            <h3>From source</h3>
+            <p>Needs Node 24 or later.</p>
+            <pre><code>git clone https://github.com/raytfitzgerald/FreeGaz
+cd FreeGaz
+npm install
+npm run dev</code></pre>
+            <p>No trainer handy? <code>FREEGAZ_SIM=1 npm run dev</code> runs it against a simulated KICKR and heart-rate strap.</p>
+            <p><a href="https://github.com/raytfitzgerald/FreeGaz">Read the code on GitHub</a> · <a href="https://github.com/raytfitzgerald/FreeGaz/issues/new/choose">Report a bug</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="track" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="wrap footer-row">
+      <img src="assets/brand/freegaz-icon.svg" alt="" width="40" height="40">
+      <div>
+        <p>FreeGaz is free and open source under the <a href="https://github.com/raytfitzgerald/FreeGaz/blob/main/LICENSE">MIT license</a>. Made by <a href="https://github.com/raytfitzgerald">Ray Fitzgerald</a>.</p>
+        <p class="fine">FreeGaz is not affiliated with or endorsed by FulGaz, Zwift, TrainerRoad or Wahoo. Product names are trademarks of their owners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Point the download buttons at the newest release's DMG. The links fall
+    // back to the releases page if GitHub doesn't answer.
+    fetch("https://api.github.com/repos/raytfitzgerald/FreeGaz/releases?per_page=1")
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then(([release]) => {
+        const dmg = release && release.assets.find((a) => a.name.endsWith(".dmg"));
+        if (!dmg) return;
+        document.querySelectorAll("[data-dmg]").forEach((a) => (a.href = dmg.browser_download_url));
+        document.querySelectorAll("[data-dmg-name]").forEach((el) => (el.textContent = dmg.name));
+        const label = release.tag_name + (release.prerelease ? " pre-release" : "");
+        document.querySelectorAll("[data-version]").forEach((el) => (el.textContent = label));
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
