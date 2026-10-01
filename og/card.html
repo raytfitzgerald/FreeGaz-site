@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- The link-preview card (assets/img/og.png). Regenerate with og/render.sh. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Saira"; src: url("../assets/fonts/saira.woff2") format("woff2"); font-weight: 100 900; }
+  @font-face { font-family: "Atkinson"; src: url("../assets/fonts/atkinson.woff2") format("woff2"); font-weight: 200 800; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    background:
+      radial-gradient(700px 500px at 88% 10%, rgba(30, 89, 205, 0.55), transparent 70%),
+      radial-gradient(500px 400px at 0% 100%, rgba(119, 195, 255, 0.12), transparent 70%),
+      #111d36;
+    color: #eff4fa;
+    font-family: "Atkinson", system-ui, sans-serif;
+  }
+  .copy { position: absolute; left: 72px; top: 70px; width: 560px; }
+  .wordmark { width: 330px; display: block; }
+  h1 {
+    margin-top: 40px;
+    font-family: "Saira", sans-serif; font-weight: 800; font-size: 66px; line-height: 0.98;
+    letter-spacing: -0.01em; text-transform: none;
+  }
+  h1 em { font-style: normal; color: #77c3ff; }
+  .tags { margin-top: 30px; display: flex; gap: 12px; }
+  .tags span {
+    font-family: "Saira", sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.04em; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 999px; border: 2px solid #4c5d75; color: #bdccde;
+  }
+  .tags span.free { background: #77c3ff; border-color: #77c3ff; color: #111d36; }
+  .shot {
+    position: absolute; left: 660px; top: 92px; width: 760px;
+    border-radius: 18px; border: 2px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55), 0 0 0 10px rgba(255, 255, 255, 0.03);
+    transform: rotate(-4deg); transform-origin: 0 0;
+  }
+  .track { position: absolute; left: 0; right: 0; bottom: 34px; display: grid; gap: 7px; }
+  .track span { display: block; height: 6px; }
+  .track span:nth-child(1) { background: #1e59cd; }
+  .track span:nth-child(2) { background: #e0383b; }
+  .track span:nth-child(3) { background: #eff4fa; height: 3px; }
+  .track span:nth-child(4) { background: #77c3ff; height: 14px; }
+</style>
+</head>
+<body>
+  <img class="shot" src="../assets/img/home.png" alt="">
+  <div class="copy">
+    <img class="wordmark" src="../assets/brand/freegaz-wordmark-night.svg" alt="FreeGaz">
+    <h1>The indoor trainer app that <em>never</em> sends you a bill.</h1>
+    <div class="tags"><span class="free">Free</span><span>Open source</span><span>Mac + phone</span></div>
+  </div>
+  <div class="track"><span></span><span></span><span></span><span></span></div>
+</body>
+</html>
