@@ -308,6 +308,17 @@ npm run dev</code></pre>
             <p><a href="https://github.com/raytfitzgerald/FreeGaz">Read the code on GitHub</a> · <a href="https://github.com/raytfitzgerald/FreeGaz/issues/new/choose">Report a bug</a></p>
           </div>
         </div>
+        <div class="card bike-fund" id="bike-fund" data-bike-fund hidden>
+          <div>
+            <h3>Contribute to the developer's bike fund</h3>
+            <p>FreeGaz is free and always will be. If it saved you a subscription, you can put a little toward the developer's next bike. Totally optional, and it unlocks nothing.</p>
+          </div>
+          <p class="cta-row">
+            <a class="btn btn-secondary" data-tip="venmo" hidden>Venmo</a>
+            <a class="btn btn-secondary" data-tip="buymeacoffee" hidden>Buy Me a Coffee</a>
+            <a class="btn btn-secondary" data-tip="kofi" hidden>Ko-fi</a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -317,13 +328,32 @@ npm run dev</code></pre>
     <div class="wrap footer-row">
       <img src="assets/brand/freegaz-icon.svg" alt="" width="40" height="40">
       <div>
-        <p>FreeGaz is free and open source under the <a href="https://github.com/raytfitzgerald/FreeGaz/blob/main/LICENSE">MIT license</a>. Made by <a href="https://github.com/raytfitzgerald">Ray Fitzgerald</a>.</p>
+        <p>FreeGaz is free and open source under the <a href="https://github.com/raytfitzgerald/FreeGaz/blob/main/LICENSE">MIT license</a>. Made by <a href="https://github.com/raytfitzgerald">Ray Fitzgerald</a>.<span data-bike-fund hidden> Chip in to his <a href="#bike-fund">bike fund</a>.</span></p>
         <p class="fine">FreeGaz is not affiliated with or endorsed by FulGaz, Zwift, TrainerRoad or Wahoo. Product names are trademarks of their owners.</p>
       </div>
     </div>
   </footer>
 
   <script>
+    // The developer's bike fund. Set a handle to show its button; with none
+    // set, the whole bike fund stays hidden.
+    const BIKE_FUND = { venmo: "", buymeacoffee: "", kofi: "" };
+    const TIP_URLS = {
+      venmo: (h) => "https://venmo.com/u/" + h,
+      buymeacoffee: (h) => "https://buymeacoffee.com/" + h,
+      kofi: (h) => "https://ko-fi.com/" + h,
+    };
+    let anyTip = false;
+    document.querySelectorAll("[data-tip]").forEach((a) => {
+      const handle = (BIKE_FUND[a.dataset.tip] || "").replace(/^@/, "");
+      if (!/^[\w-]{1,50}$/.test(handle)) return;
+      a.href = TIP_URLS[a.dataset.tip](handle);
+      a.rel = "noopener";
+      a.hidden = false;
+      anyTip = true;
+    });
+    if (anyTip) document.querySelectorAll("[data-bike-fund]").forEach((el) => (el.hidden = false));
+
     // Point the download buttons at the newest release's DMG. The links fall
     // back to the releases page if GitHub doesn't answer.
     fetch("https://api.github.com/repos/raytfitzgerald/FreeGaz/releases?per_page=1")
