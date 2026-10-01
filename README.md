@@ -1,4 +1,4 @@
-# freegaz.com
+# freegaz.app
 
 The website for [FreeGaz](https://github.com/raytfitzgerald/FreeGaz), the free indoor trainer app.
 
