@@ -286,7 +286,7 @@
             <p>Needs a Mac with Apple Silicon and Bluetooth.</p>
             <ol>
               <li>Download <span class="mono" data-dmg-name>FreeGaz-0.3.0-arm64.dmg</span> and drag FreeGaz to Applications.</li>
-              <li>The builds aren't notarized yet, so macOS refuses the first launch. Right-click <strong>FreeGaz.app → Open</strong>, or run:
+              <li>The builds aren't notarized yet, so macOS blocks the first launch with "Apple could not verify FreeGaz". Click <strong>Done</strong>, then open <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong>. Or run:
                 <pre><code>xattr -dr com.apple.quarantine /Applications/FreeGaz.app</code></pre>
               </li>
               <li>Quit Zwift and the Wahoo app so FreeGaz can control the trainer, then press <strong>Connect trainer</strong>.</li>
