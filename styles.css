@@ -306,3 +306,12 @@ h3 { font-size: 1.4rem; font-weight: 600; }
 .footer-row { display: flex; gap: 1rem; align-items: flex-start; }
 .footer-row p { margin: 0 0 0.5rem; color: var(--ink-dim); }
 .footer-row img { flex: none; }
+
+/* Privacy and other text pages */
+.legal { padding: 3rem 0 4rem; }
+.legal .wrap { max-width: 46rem; }
+.legal h1 { max-width: none; margin-bottom: 0.5rem; }
+.legal h2 { font-size: 1.35rem; margin: 2.25rem 0 0.5rem; }
+.legal p, .legal li { max-width: 65ch; }
+.legal ul { padding-left: 1.25rem; }
+.legal li + li { margin-top: 0.5rem; }
